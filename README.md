@@ -18,3 +18,13 @@ Save Slate [config](https://github.com/Ragnar-Hardarson/dotfiles/blob/master/.sl
 `wget -O ~/.slate https://raw.githubusercontent.com/Ragnar-Hardarson/dotfiles/master/.slate`
 
 Open Karabiner-elements and map Caps lock to Hyper
+![karabiner-elements-setup](https://cloud.githubusercontent.com/assets/22854722/25352900/d4da758c-292d-11e7-93c3-1a40ec4be93d.gif)
+
+Alternatively edit the karabiner.config file to match https://github.com/Ragnar-Hardarson/dotfiles/blob/master/karabiner.json
+`vim ~/.karabiner.d/configuration/karabiner.json`
+
+Reload Slate
+1. Click Slate in toolbar
+2. Click 'Reload and Load Config'
+
+Enjoy your keybindings
