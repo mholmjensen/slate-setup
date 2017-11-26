@@ -39,7 +39,11 @@ echo "Configs set. Slate and Karabiner-elements might require a reload to take e
 
 echo "Your caps-lock has now been converted to a Hyper key"
 
-echo "${RED}Remember to start Karabiner and Slate AND set accessibility access for Slate${NC}\n"
+echo "${RED}Opening Slate and Karabiner-elements for you${NC}\n"
+
+open -a Karabiner-Elements
+
+open -a Slate
 
 echo "Try the following combinations:"
 
