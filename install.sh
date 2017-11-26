@@ -1,5 +1,9 @@
 #!/bin/sh
 
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+
 echo "Window management setup commenced..."
 
 echo "Checking for Homebrew ☕️"
@@ -23,14 +27,19 @@ brew cask install karabiner-elements
 echo "Dependencies installed. Fetching ragnar-h configs"
 
 # Slate configs
-wget -O ~/.slate https://raw.githubusercontent.com/Ragnar-H/slate-setup/master/.slate
+curl -o ~/.slate https://raw.githubusercontent.com/Ragnar-H/slate-setup/master/.slate
+
+mkdir ~/.config
+mkdir ~/.config/karabiner
 
 # Karabiner elements
-wget -O ~/.config/karabiner https://raw.githubusercontent.com/Ragnar-H/slate-setup/master/karabiner.json
+curl -o ~/.config/karabiner/karabiner.json https://raw.githubusercontent.com/Ragnar-H/slate-setup/master/karabiner.json
 
 echo "Configs set. Slate and Karabiner-elements might require a reload to take effect"
 
 echo "Your caps-lock has now been converted to a Hyper key"
+
+echo "${RED}Remember to start Karabiner and Slate AND set accessibility access for Slate${NC}\n"
 
 echo "Try the following combinations:"
 
