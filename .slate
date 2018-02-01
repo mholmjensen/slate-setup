@@ -50,18 +50,16 @@ bind l:${hyper} ${lefthalf}
 bind f:${hyper} ${full}
 bind r:${hyper} ${righthalf}
 bind k:${hyper} ${righttwothird}
-bind s:${hyper} throw next
+bind g:${hyper} throw next
 bind z:${hyper} undo
 bind u:${hyper} ${leftthird}
 bind i:${hyper} ${middlethird}
 bind o:${hyper} ${rightthird}
 
 # App bindings
-bind e:${hyper} focus 'Code'
-bind w:${hyper} focus 'Google Chrome'
-bind m:${hyper} focus 'Spotify'
-bind t:${hyper} focus 'iTerm2'
-bind d:${hyper} focus 'Sublime Text'
-bind c:${hyper} focus 'Slack'
-bind d:${hyper} focus 'Postman'
-bind v:${hyper} focus 'IntelliJ IDEA'
+bind a:${hyper} focus 'IntelliJ IDEA'
+bind s:${hyper} focus 'Google Chrome'
+bind d:${hyper} focus 'iTerm2'
+bind e:${hyper} focus 'DataGrip'
+bind f:${hyper} focus 'Spotify'
+bind r:${hyper} focus 'Slack'
